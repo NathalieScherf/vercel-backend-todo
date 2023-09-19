@@ -1,0 +1,15 @@
+{
+  "name": "backend-todo-app",
+  "version": "1.0.0",
+  "description": "In this project you will create an express backend for a Todo app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1"
+  }
+}
