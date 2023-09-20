@@ -4,7 +4,6 @@ const { param, body, validationResult } = require('express-validator');
 const { v4: uuidv4 } = require('uuid');
 require('dotenv').config()
 
-// const Todo = require("./todo_model")
 
 
 const app = express()
@@ -43,15 +42,6 @@ const Todo = mongoose.models.Todo || mongoose.model("Todo", TodoSchema);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
-
-let mockdata = [
-  { task: "Build a to do app!", status: 'open', id: uuidv4() },
-  { task: "Learn SQL", status: 'open', id: uuidv4() },
-  { task: "Practice JS on Codewars", status: 'open', id: uuidv4() },
-  { task: "Commit your code!", status: 'open', id: uuidv4() },
-  { task: "Relax", status: 'open', id: uuidv4() },
-  { task: "Test the app", status: 'open', id: uuidv4() },
-]
 
 
 app.get('/', (req, res) => {

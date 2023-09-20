@@ -2,9 +2,9 @@
   "name": "backend-todo-app",
   "version": "1.0.0",
   "description": "In this project you will create an express backend for a Todo app.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
